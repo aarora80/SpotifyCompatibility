@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>Spotify Personalities</title>
+  </head>
+  <body>
+    <div class="background-container">
+      <header class="spotify-header">
+        <h1>
+          <img
+            src="{{ url_for('static', filename='spotify-logo.png') }}"
+            alt="Spotify Logo"
+            class="spotify-logo"
+          />
+          Spotify Compatibility
+        </h1>
+        <div class="logo-container"></div>
+      </header>
+
+      <div class="button-container">
+        <button class="login-button" onclick="window.location.href='/login'">
+          Login with Spotify
+        </button>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

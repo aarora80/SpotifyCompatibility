@@ -1,0 +1,51 @@
+/* Add styles for the body */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Add styles for the header */
+h1 {
+  color: #1db954; /* Spotify green */
+}
+
+/* Add styles for the form */
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Add styles for the label */
+label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Add styles for the input */
+input {
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Add styles for the button */
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #1db954; /* Spotify green */
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+/* Add styles for the button on hover */
+button:hover {
+  background-color: #15a33e; /* Darker green on hover */
+}

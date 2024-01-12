@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='match.css') }}"
+    />
+    <title>Match Result</title>
+  </head>
+  <body>
+    <h1>Match Result</h1>
+
+    {% if current_user and searched_user %}
+    <p>Current User: {{ current_user.name }}</p>
+    <p>Searched User: {{ searched_user.name }}</p>
+    <p>Compatibility Percentage: {{ compatibility_percentage }}%</p>
+
+    {% if compatibility_percentage >= 70 %}
+    <p>Congratulations! You have a high compatibility.</p>
+    {% elif compatibility_percentage >= 50 %}
+    <p>You have a decent compatibility.</p>
+    {% else %}
+    <p>Compatibility might be low. Keep exploring!</p>
+    {% endif %}
+
+    <!-- Add the button to redirect to /content -->
+    <a href="{{ url_for('content') }}">
+      <button type="button">Back to Content</button>
+    </a>
+
+    {% else %}
+    <p>Error: Users not found.</p>
+    {% endif %}
+  </body>
+</html>

@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "SeymoreFont";
+  src: url("fonts/SeymourOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.spotify-header h1 {
+  font-family: "SeymoreFont", sans-serif; /* Apply the custom font to the header */
+  font-size: 50px;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.background-container {
+  background-image: url("spotifybackground.jpg");
+  background-size: cover;
+  background-position: center center;
+  font-family: "Arial", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotify-header h1 {
+  color: black;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  /* margin-right: 700px; */
+}
+
+.spotify-logo {
+  width: 80px;
+  margin-bottom: -10px;
+}
+
+.spotify-header {
+  color: black;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+}
+
+.logo-container {
+  max-width: 80px;
+  margin-top: 0px; /* Adjust as needed */
+  margin-bottom: 100px;
+}
+
+/* .spotify-logo {
+  width: 100%;
+} */
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto; /* Vertically center the button */
+  margin-bottom: 350px; /* Adjust as needed */
+}
+
+.login-button {
+  background-color: #1db954;
+  color: black;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  outline: none;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-button:hover {
+  background-color: #169144;
+}
+
+.login-button:focus {
+  outline: none; /* Remove the outline on focus */
+}
